@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main, aside, section, article, footer, div  {
+    display: block;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1046px;
+    height: 64px;
+    margin: 32px auto 0 auto;
+    padding: 0 32px;
+    gap: 135px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    height: 64px;
+}
+
+.logo-image {
+    width: 64px;
+    height: 64px; 
+    background-image: url("../images2/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.logo-text {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #3E3F43;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    white-space: nowrap;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 65px;
+    white-space: nowrap;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    color: #612999;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    cursor: pointer;
+}
+
+.nav-menu a:hover {
+    font-weight: 700;
+    color: #8B4DDB;
+}
