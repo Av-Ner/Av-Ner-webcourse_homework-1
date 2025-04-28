@@ -18,9 +18,8 @@ html, body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
-    max-width: 1046px;
     height: 64px;
     margin: 32px auto 0 auto;
     padding: 0 32px;
@@ -79,4 +78,76 @@ header {
 .nav-menu a:hover {
     font-weight: 700;
     color: #8B4DDB;
+}
+
+
+
+
+
+footer {
+    background-color: #EFECFF;
+    padding: 32px 32px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: flex-start;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+footer h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+footer a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.networks-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.networks-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.footer-copy {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.footer-copy:hover {
+    text-decoration: underline;
 }
