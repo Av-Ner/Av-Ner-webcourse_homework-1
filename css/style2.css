@@ -97,6 +97,46 @@ header {
 }
 
 
+.list-section {
+    font-family: 'Rubik', sans-serif;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.list-section h2 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #612999;
+}
+
+.list-section ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.rocket-container {
+    width: 82px;
+    height: 82px;
+    background-color: #612999;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.rocket-container img {
+    width: 29px;
+    height: 43px;
+    object-fit: contain;
+}
+
+.list-section p {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    margin-left: 16px;
+}
 
 
 
