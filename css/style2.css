@@ -9,10 +9,9 @@ header, nav, main, aside, section, article, footer, div  {
 }
 
 html, body {
-    width: 100%;
-    overflow-x: hidden;
     background-color: #FFFFFF;
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -31,30 +30,29 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
+    height: 64px;
     gap: 3px;
     text-decoration: none;
     cursor: pointer;
-    height: 64px;
 }
 
 .logo-image {
     width: 64px;
     height: 64px; 
     background-image: url("../images1/logo.png");
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
 .logo-text {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1;
-    color: #3E3F43;
     display: flex;
     align-items: center;
     height: 64px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #3E3F43;
+    text-decoration: none;
 }
 
 .nav-menu {
@@ -63,21 +61,20 @@ header {
 }
 
 .nav-menu a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1;
-    color: #612999;
-    transition: color 0.3s;
     display: flex;
     align-items: center;
     height: 64px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #612999;
+    text-decoration: none;
+    transition: color 0.3s;
     cursor: pointer;
 }
 
 .nav-menu a:hover {
     font-weight: 700;
-    color: #8B4DDB;
+    color: #612999;
 }
 
 
@@ -116,19 +113,19 @@ header {
 }
 
 .rocket-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 82px;
     height: 82px;
     background-color: #612999;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
   
 .rocket-container img {
+    object-fit: contain;
     width: 29px;
     height: 43px;
-    object-fit: contain;
 }
 
 .list-section p {
@@ -142,6 +139,7 @@ header {
 .my-content {
     font-family: 'Rubik', sans-serif;
     padding-bottom: 200px;
+    border: none;
 }
 
 .my-content h2 {
@@ -150,8 +148,6 @@ header {
     color: #612999;
     margin-bottom: 32px;
 }
-
-
 
 
 footer {
@@ -167,9 +163,9 @@ footer {
 
 .footer-content {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 150px;
-    justify-content: flex-start;
 }
 
 .footer-column {
@@ -187,10 +183,10 @@ footer h2 {
 }
 
 footer a {
-    color: #333333;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
+    color: #333333;
 }
 
 .networks-icons {
@@ -201,9 +197,9 @@ footer a {
 }
 
 .networks-icons img {
+    object-fit: contain;
     width: 20px;
     height: 20px;
-    object-fit: contain;
     cursor: pointer;
 }
 

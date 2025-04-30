@@ -9,10 +9,9 @@ header, nav, main, aside, section, article, footer, div  {
 }
 
 html, body {
-    width: 100%;
-    overflow-x: hidden;
     background-color: #FFFFFF;
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -31,30 +30,29 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
+    height: 64px;
     gap: 3px;
     text-decoration: none;
     cursor: pointer;
-    height: 64px;
 }
 
 .logo-image {
     width: 64px;
     height: 64px; 
     background-image: url("../images1/logo.png");
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
 .logo-text {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1;
-    color: #3E3F43;
     display: flex;
     align-items: center;
     height: 64px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #3E3F43;
+    text-decoration: none;
 }
 
 .nav-menu {
@@ -63,36 +61,35 @@ header {
 }
 
 .nav-menu a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1;
-    color: #612999;
-    transition: color 0.3s;
     display: flex;
     align-items: center;
     height: 64px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #612999;
+    text-decoration: none;
+    transition: color 0.3s;
     cursor: pointer;
 }
 
 .nav-menu a:hover {
     font-weight: 700;
-    color: #8B4DDB;
+    color: #612999;
 }
 
 
 .cover-image {
-    width: 100%;
-    height: 797px;
-    background-image: url("../images1/cover image.png");
-    background-size: contain;
-    background-position: left center;
-    background-repeat: no-repeat;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    background-image: url("../images1/cover image.png");
+    width: 100vw;
+    height: 797px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     position: relative;
-    padding: 0px 20px;
+    padding: 0px 32px;
 }
 
 #wrapper {
@@ -105,17 +102,15 @@ header {
 }
 
 .cover-text h1 {
-    font-size: 90px;
     font-weight: 800;
+    font-size: 90px;
     margin-bottom: 24px;
-    line-height: 1;
     color: #612999;
 }
 
 .cover-text p {
-    font-size: 24px;
     font-weight: 600;
-    line-height: 1;
+    font-size: 24px;
     color: #000000;
 }
 
@@ -138,7 +133,6 @@ header {
     line-height: 1;
     color: #000000;
     overflow-wrap: break-word;
-    white-space: normal;
     margin-bottom: 32px;
 }
 
@@ -156,21 +150,21 @@ header {
 }
 
 .cards-container {
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
-    justify-items: center;
     padding-top: 32px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     background-color: #EFECFF;
     border-radius: 32px;
     width: 376px;
     height: 496px;
-    box-sizing: border-box;
     gap: 16px;
     padding-bottom: 24px;
 }
@@ -183,10 +177,10 @@ header {
 }
 
 .card-image img {
+    display: block;
+    object-fit: cover;
     width: 100%;
     height: auto;
-    object-fit: cover;
-    display: block;
 }
 
 .like-with-background {
@@ -197,14 +191,14 @@ header {
 }
 
 .like-icon {
-    border: none;
-    background-color: #EFECFF;
-    width: 47px;
-    height: 47px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #EFECFF;
+    border: none;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -221,14 +215,14 @@ header {
 }
 
 .card-content h3 {
-    font-size: 30px;
     font-weight: 400;
+    font-size: 30px;
     color: #000000;
 }
 
 .card-content p {
-    font-size: 18px;
     font-weight: 400;
+    font-size: 18px;
     color: #333333;
 }
 
@@ -240,27 +234,27 @@ header {
 }
 
 .card-price {
-    font-size: 35px;
     font-weight: 400;
+    font-size: 35px;
     color: #612999;
     padding-left: 32px;
 }
 
 .basket-with-background {
+    display: flex;
     padding: 0;
     margin-right: 32px;
-    display: flex;
 }
 
 .basket-icon {
-    border: none;
-    background-color: #612999;
-    border-radius: 50%;
-    width: 63px;
-    height: 63px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #612999;
+    border: none;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
     cursor: pointer;
 }
   
@@ -283,9 +277,9 @@ footer {
 
 .footer-content {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 150px;
-    justify-content: flex-start;
 }
 
 .footer-column {
@@ -303,10 +297,10 @@ footer h2 {
 }
 
 footer a {
-    color: #333333;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
+    color: #333333;
 }
 
 .networks-icons {
@@ -317,9 +311,9 @@ footer a {
 }
 
 .networks-icons img {
+    object-fit: contain;
     width: 20px;
     height: 20px;
-    object-fit: contain;
     cursor: pointer;
 }
 
