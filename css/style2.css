@@ -139,6 +139,20 @@ header {
 }
 
 
+.my-content {
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 200px;
+}
+
+.my-content h2 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #612999;
+    margin-bottom: 32px;
+}
+
+
+
 
 footer {
     background-color: #EFECFF;
