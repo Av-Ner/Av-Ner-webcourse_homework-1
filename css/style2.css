@@ -15,16 +15,18 @@ html, body {
     font-family: 'Nunito', sans-serif;
 }
 
+
 header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    height: 64px;
-    margin: 32px auto 0 auto;
+    height: 84px;
+    margin: 32px auto;
     padding: 0 32px;
     gap: 135px;
 }
+
 
 .logo-container {
     display: flex;
@@ -47,25 +49,23 @@ header {
 .logo-text {
     text-decoration: none;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1;
     color: #3E3F43;
     display: flex;
     align-items: center;
     height: 64px;
-    white-space: nowrap;
 }
 
 .nav-menu {
     display: flex;
     gap: 65px;
-    white-space: nowrap;
 }
 
 .nav-menu a {
     text-decoration: none;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1;
     color: #612999;
     transition: color 0.3s;
@@ -81,13 +81,28 @@ header {
 }
 
 
+#wrapper {
+    max-width: 1200px;
+    padding: 0 32px 69px 32px;
+}
+
+.images-section {
+    display: flex;
+    gap: 32px;
+}
+
+.images-section img {
+    border: 4px solid #E6DBFE;
+    box-sizing: border-box;
+}
+
+
 
 
 
 footer {
     background-color: #EFECFF;
-    padding: 32px 32px;
-    font-family: 'Nunito', sans-serif;
+    padding: 32px;
 }
 
 .footer-main {
